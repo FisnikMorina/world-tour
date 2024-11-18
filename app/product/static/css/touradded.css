@@ -1,0 +1,28 @@
+body{
+    background-color: antiquewhite;
+    position: relative;
+}
+
+.success{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    background-color: aliceblue;
+    color: rgb(139, 75, 47);
+    text-align: center;
+    border: 10px solid black;
+    height: 500px;
+    width: 600px;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    display: inline-block;
+    place-content: center;
+    top: 300px;
+    left: 50%;
+    margin-left: -300px;
+
+}
+.success a{
+    text-decoration: none;
+}

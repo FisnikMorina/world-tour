@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Tours for 2025</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}"/>
+</head>
+<body>
+    <h1>World Tours List for 2025</h1>
+    {% for tour in tours %}
+        <li>{{tour}}</li>
+    {% endfor %}
+    <div class="picblocks">
+        <img src="{% static "images/ny.jpg" %}" alt="new york picture">
+        <p> New York </p>
+    </div>
+    <div class="picblocks">
+        <img src="{% static "images/uae.jpg" %}" alt="uae picture">
+        <p> United Arab Emirates </p>
+    </div>
+    <div class="picblocks">
+        <img src="{% static "images/sk.jpg" %}" alt="sk picture">
+        <p> South Korea </p>
+    </div>
+
+    <form action="{% url "add-tour" %}" method="get">
+        <button type="submit" class="button-5" role="button">Add Tour</button>
+    </form>
+
+</body>
+</html>
